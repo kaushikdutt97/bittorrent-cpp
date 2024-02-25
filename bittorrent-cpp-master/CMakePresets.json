@@ -1,0 +1,52 @@
+{
+    "version": 2,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "debug",
+            "displayName": "Build Debug With Tests",
+            "description": "Build Debug With Tests",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build_debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "ENABLE_TESTS": {
+                    "type": "BOOL",
+                    "value": "TRUE"
+                }
+            }
+        },
+        {
+            "name": "default",
+            "displayName": "Build Release",
+            "description": "Build Release",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "ENABLE_TESTS": {
+                    "type": "BOOL",
+                    "value": "FALSE"
+                }
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "debug"
+        },
+        {
+            "name": "default",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "default"
+        }
+    ]
+}

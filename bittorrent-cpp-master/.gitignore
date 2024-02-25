@@ -1,0 +1,64 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+bittorrent
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+.DS_Store
+build/
+build_debug/
+
+.tmp/
+
+.debhelper
+debian/bittorent-by-dimka/DEBIAN/control
+debian/bittorent-by-dimka/DEBIAN/md5sums
+debian/bittorent-by-dimka/usr/share/doc/bittorent-by-dimka/changelog.gz
+debian/bittorent-by-dimka.debhelper.log
+debian/bittorent-by-dimka.substvars
+debian/debhelper-build-stamp
+debian/files
+
+!/Makefile
+
+.pieces
